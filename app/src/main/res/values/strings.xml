@@ -1,4 +1,16 @@
 <resources>
     <string name="app_name">Mobiquity challenge</string>
-    <string name="title_activity_maps">Bookmarked Cities`</string>
+    <string name="title_activity_main">Bookmarked Cities</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Mobiquity Challenge</string>
+    <string name="nav_header_subtitle">prathibhanandini.kirthi@gmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_add_bookmark">Add</string>
+    <string name="action_remove_bookmark">Remove</string>
+    <string name="action_done">DONE</string>
+
+    <string name="menu_home">Bookmarked Cities</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
 </resources>
