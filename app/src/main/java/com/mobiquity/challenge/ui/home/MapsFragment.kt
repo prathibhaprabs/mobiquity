@@ -1,16 +1,19 @@
-package com.mobiquity.challenge
+package com.mobiquity.challenge.ui.home
 
 import android.os.Bundle
 import android.view.*
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentTransaction
+import androidx.navigation.Navigation.findNavController
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
+import com.mobiquity.challenge.R
 
 class MapsFragment : Fragment() {
 
@@ -27,6 +30,15 @@ class MapsFragment : Fragment() {
     private fun resetMarkerClickListener() {
 
         googleMap?.setOnMarkerClickListener {
+            if (activity != null) {
+                val currentFragment = findNavController(activity!!, R.id.nav_host_fragment)
+
+                val ft: FragmentTransaction = fragmentManager!!.beginTransaction()
+                ft.replace(R.id.nav_host_fragment, HomeFragment(), "NewFragmentTag")
+                ft.commit()
+                ft.addToBackStack("yes")
+            }
+
             Toast.makeText(activity, "Marker clicked", Toast.LENGTH_SHORT).show()
             true
         }
@@ -131,6 +143,7 @@ class MapsFragment : Fragment() {
                 showBookmarkMenu = true
                 activity?.invalidateOptionsMenu()
                 googleMap?.setOnMapClickListener(null)
+                resetMarkerClickListener()
             }
         }
         return super.onOptionsItemSelected(item)

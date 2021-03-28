@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/nav_home"
-        android:name="com.mobiquity.challenge.MapsFragment"
+        android:name="com.mobiquity.challenge.ui.home.MapsFragment"
         android:label="@string/menu_home"
         tools:layout="@layout/fragment_maps" />
 
