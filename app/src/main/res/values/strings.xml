@@ -12,7 +12,7 @@
     <string name="action_reset">Reset</string>
 
     <string name="menu_home">Bookmarked Cities</string>
-    <string name="menu_gallery">Gallery</string>
+    <string name="menu_help">Help</string>
     <string name="menu_slideshow">Slideshow</string>
 
     <string name="today_weather">Today\'s Weather</string>
@@ -22,4 +22,5 @@
     <string name="humidity">Humidity</string>
     <string name="wind">Wind</string>
     <string name="rain">Rain</string>
+    <string name="help">Help</string>
 </resources>
