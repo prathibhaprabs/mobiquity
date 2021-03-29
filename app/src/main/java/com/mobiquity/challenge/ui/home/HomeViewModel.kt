@@ -44,17 +44,17 @@ class HomeViewModel : ViewModel() {
     )
 
     class Main(
-        val temp: Float,
-        val feels_like: Float,
-        val temp_min: Float,
-        val temp_max: Float,
-        val pressure: Float,
-        val humidity: Float
+        val temp: String,
+        val feels_like: String,
+        val temp_min: String,
+        val temp_max: String,
+        val pressure: String,
+        val humidity: String
     )
 
     class Wind(
-        val speed: Float,
-        val deg: Float
+        val speed: String,
+        val deg: String
     )
 
     class Sys(

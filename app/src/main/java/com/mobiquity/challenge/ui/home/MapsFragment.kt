@@ -34,7 +34,7 @@ class MapsFragment : Fragment() {
                 val currentFragment = findNavController(activity!!, R.id.nav_host_fragment)
 
                 val ft: FragmentTransaction = fragmentManager!!.beginTransaction()
-                ft.replace(R.id.nav_host_fragment, HomeFragment(), "NewFragmentTag")
+                ft.replace(R.id.nav_host_fragment, HomeFragment(it.position), "NewFragmentTag")
                 ft.commit()
                 ft.addToBackStack("yes")
             }

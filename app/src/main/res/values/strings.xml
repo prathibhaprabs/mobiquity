@@ -13,4 +13,12 @@
     <string name="menu_home">Bookmarked Cities</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+
+    <string name="today_weather">Today\'s Weather</string>
+    <string name="last_10_days">Last 10 Days Weather</string>
+    <string name="weather">Weather</string>
+    <string name="temperature">Temperature</string>
+    <string name="humidity">Humidity</string>
+    <string name="wind">Wind</string>
+    <string name="rain">Rain</string>
 </resources>
