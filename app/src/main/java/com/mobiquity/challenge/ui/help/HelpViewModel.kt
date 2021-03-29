@@ -1,10 +1,10 @@
-package com.mobiquity.challenge.ui.gallery
+package com.mobiquity.challenge.ui.help
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class GalleryViewModel : ViewModel() {
+class HelpViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
         value = "This is gallery Fragment"

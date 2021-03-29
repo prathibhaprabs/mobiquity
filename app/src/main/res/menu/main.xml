@@ -6,12 +6,17 @@
         android:id="@+id/action_add_bookmark"
         android:orderInCategory="100"
         android:title="@string/action_add_bookmark"
-        app:showAsAction="always" />
+        app:showAsAction="ifRoom" />
     <item
         android:id="@+id/action_remove_bookmark"
         android:orderInCategory="200"
         android:title="@string/action_remove_bookmark"
-        app:showAsAction="always" />
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_reset"
+        android:orderInCategory="300"
+        android:title="@string/action_reset"
+        app:showAsAction="never" />
     <item
         android:id="@+id/action_done"
         android:title="@string/action_done"

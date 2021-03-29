@@ -1,22 +1,21 @@
-package com.mobiquity.challenge.ui.home
+package com.mobiquity.challenge.ui.city
 
-import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class HomeViewModel : ViewModel() {
+class CityViewModel : ViewModel() {
 
-    private val _text = MutableLiveData<String>().apply {
-        value = "This is home Fragment"
-    }
-    private val weatherForecast: MutableLiveData<WeatherForecast> = MutableLiveData()
-    val text: LiveData<String> = _text
+    private val weatherInfo: MutableLiveData<WeatherInfo> = MutableLiveData()
 
     init {
-        weatherForecast.value = WeatherForecast()
+        weatherInfo.value = WeatherInfo()
     }
 
     data class WeatherForecast(
+        val list: ArrayList<WeatherInfo>
+    )
+
+    data class WeatherInfo(
         val coord: Coord? = null,
         val weather: ArrayList<Weather>? = null,
         val base: String? = null,

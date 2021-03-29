@@ -9,13 +9,14 @@
     <string name="action_add_bookmark">Add</string>
     <string name="action_remove_bookmark">Remove</string>
     <string name="action_done">DONE</string>
+    <string name="action_reset">Reset</string>
 
     <string name="menu_home">Bookmarked Cities</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
 
     <string name="today_weather">Today\'s Weather</string>
-    <string name="last_10_days">Last 10 Days Weather</string>
+    <string name="weather_forecast">Weather Forecast</string>
     <string name="weather">Weather</string>
     <string name="temperature">Temperature</string>
     <string name="humidity">Humidity</string>
